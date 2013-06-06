@@ -13,7 +13,7 @@ Zza Data is also a pure JavaScript application for generating that data in a var
 We hope it supports more formats in time. Send in your pull requests.
 
 ## Why Zza? ##
-We build many forms-over-data sample application. The data model for such apps has to be simple enough to understand quickly but rich enough to represent typical scenarios for forms-over-data applications. We wanted something fresher and more fun than that tired old Microsoft Northwind database. We couldn't find anything so we wrote "zza.data".
+We build many forms-over-data sample applications. The data model for such apps has to be simple enough to understand quickly but rich enough to represent typical scenarios for forms-over-data applications. We wanted something fresher and more fun than that tired old Microsoft Northwind database. We couldn't find anything so we wrote "zza.data".
 
 We want to share it with you, so you can build your own sample apps without having to waste time (like we did) dreaming up a data model, populating a database with sample data, and having to explain its schema and contents to the world. We all want to move on to the fun stuff, the application itself.
 
