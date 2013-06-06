@@ -24,15 +24,15 @@ Zza takes orders over the phone for pick-up and delivery; perhaps in your app, t
 
 The customer places an `Order` for pizzas, salads, and beverages. The app remembers the customers and their orders.
 
-The customer picks from a `Product` catalog of pizzas, salads, and beverages. S/he can customize pizzas and salads (`Products`) with toppings (`ProductOptions`). The resulting order is a three level structure: `Order` -> 'OrderItem` -> `OrderItemOption`.
+The customer picks from a `Product` catalog of pizzas, salads, and beverages. S/he can customize pizzas and salads (`Products`) with toppings (`ProductOptions`). The resulting order is a three level structure: `Order` -> `OrderItem` -> `OrderItemOption`.
 
-Pricing is a bit tricky ... deliberately. The pizzas and salads come in different sizes, each size with its own price for the base pizza/salad and a price per extra topping. Some of the toppings are free (spices). Some of the toppings cost double the topping-price-per-product-size. The parameters of the calculation are captured in properties of the `ProductSize`, `Product` and `ProductOption` entities.
+Pricing is a bit tricky ... deliberately. The pizzas and salads come in different sizes, each size with its own price for the base pizza/salad and a price per extra topping. Some of the toppings are free (spices). Some of the toppings cost double the topping-price-per-product-size (Pesto, BBQ Chicken). The parameters of the calculation are captured in properties of the `ProductSize`, `Product` and `ProductOption` entities.
 
-There are a few more wrinkles. You can read the code in "zzaGenerator.js" yourself (we'll explain these pricing and other 'rules' in more detail in future). 
+There are a few more wrinkles (gluten-free costs more, $2 for delivery). You can read the code in "zzaGenerator.js" yourself (we'll explain these pricing and other 'rules' in more detail in future). 
 
 The rules don't really matter. The point is to introduce enough complexity so you can demonstrate how you'd implement and represent business rules in your application.
 
-The primary keys are all called `id`. They are all integer ... except the `Customer` id which is a Guid in JSON and SQL generations and a `ObjectId` in the MongoDb generation. We needed a little variety for extra "realism". 
+The primary keys are all called `id`. They are all integer ... except the `Customer` id which is a `Guid` in the JSON and SQL generations and is an `ObjectId` in the MongoDb generation. We needed a little variety for extra "realism". 
 
 The Customer has an address because s/he might order again. But the order has its own delivery address because ... well, you might order a pizza while you're at your friend's house; you don't want Zza to deliver it to your home, right?
 
@@ -68,5 +68,5 @@ You could run the "T-SQL" generator, open SQL Server Management Studio (SMS), op
 The mongo generator is a little different. It requires node.js. Assuming you have node and MongoDb installed, you fire up your MongoDb server and then run "mongoGen.js" in node. That will (re)create a "Zza" database.
 
 ## Images ##
-You want pictures in your app, right? Well, we've got `Product` pictures of pizzas, salads and beverages in the *images* folder. Feel free to contribute better ones (the beverages are all the same at the moment).
+You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and beverages in the *images* folder. Feel free to contribute better ones (the beverages are all the same at the moment).
 
