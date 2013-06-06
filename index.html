@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zza Generator</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.1.0/pure-min.css">
+    <style type="text/css">
+        <!--
+        body {margin-left:8px;}
+        div.scroll {
+            height: 400px;
+            width: 600px;
+            overflow: auto;
+            border: 1px solid #666;
+            padding: 8px;
+            resize: both;
+        }
+        .pure-button-success {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: rgb(76, 201, 71); /* this is a green */
+        }
+        -->
+    </style>
+</head>
+<body>
+<h1>Zza Data Generator</h1>
+<button id="json" class="pure-button">JSON</button>
+<button id="tsql" class="pure-button">T-SQL script</button>
+<p></p>
+<div id="container" class="scroll">
+    <pre id="output"></pre>
+</div>
+<p></p>
+<button id="selectAll" class="pure-button pure-button-success">Select all</button>
+
+<pre id="stats"></pre>
+
+<script>var app={};</script>
+<script type="text/javascript" src="utilityFns.js"></script>
+<script type="text/javascript" src="customer.js"></script>
+<script type="text/javascript" src="product.js"></script>
+<script type="text/javascript" src="productOptions.js"></script>
+<script type="text/javascript" src="zaaGenerator.js"></script>
+<script type="text/javascript" src="sqlServerReporter.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
