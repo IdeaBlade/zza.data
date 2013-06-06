@@ -37,21 +37,21 @@ The primary keys are all called `id`. They are all integer ... except the `Custo
 The Customer has an address because s/he might order again. But the order has its own delivery address because ... well, you might order a pizza while you're at your friend's house; you don't want Zza to deliver it to your home, right?
 
 ## The Model ##
-We need the following "Entity Types" to make this work:
+We need the following "Entity Types" to make this work. Here are the entity type names and current number of items generated for each type.
 
 **Mutable Entities**
 
-- Customer
-- Order
-- OrderItem (pizza, salad, beverage)
-- OrderItemOption (toppings, salad dressings)
+- Customer (100)
+- Order (536)
+- OrderItem (1494 ordered pizzas, salads, and beverages)
+- OrderItemOption (1884 ordered crusts, toppings, and salad dressings)
 
 **Reference Entities**
 
-- OrderStatus (Ordered, PickedUp, Delivered, Canceled, Pending)
-- Product
-- ProductOption
-- ProductSize 
+- OrderStatus (5: Ordered, PickedUp, Delivered, Canceled, Pending)
+- Product (41 pizzas, salads, and beverages)
+- ProductOption (64 crusts, toppings, and salad dressings)
+- ProductSize (15)
 
 ### SQL v No-SQL ###
 Those entities map one-for-one to SQL tables and there are foreign keys to support the associations among related entities.
@@ -70,5 +70,9 @@ The mongo generator is a little different. It requires node.js. Assuming you hav
 Or you could extract "ZzaMongDb.zip" (located in the *output* folder) into your MongoDb data folder.
 
 ## Images ##
-You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and beverages in the *images* folder. Feel free to contribute better ones (the beverages are all the same at the moment).
+You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and beverages in the *images* folder.
+<p><img src="https://raw.github.com/IdeaBlade/zza.data/master/images/italianstallion.jpg" alt="pizza" style="width: 200px;"/>
+<img src="https://raw.github.com/IdeaBlade/zza.data/master/images/gardensalad.jpg" alt="pizza" style="width: 200px;"/>
+<img src="https://raw.github.com/IdeaBlade/zza.data/master/images/cola.jpg" alt="pizza" style="width: 200px;"/></p>
+Feel free to contribute better ones (the beverages are all the same at the moment).
 
