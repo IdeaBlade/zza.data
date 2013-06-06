@@ -71,8 +71,8 @@ Or you could extract "ZzaMongDb.zip" (located in the *output* folder) into your 
 
 ## Images ##
 You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and beverages in the *images* folder.
-<p><img src="https://raw.github.com/IdeaBlade/zza.data/master/images/italianstallion.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/>
-<img src="https://raw.github.com/IdeaBlade/zza.data/master/images/gardensalad.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/>
+<p><img src="https://raw.github.com/IdeaBlade/zza.data/master/images/italianstallion.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/> 
+<img src="https://raw.github.com/IdeaBlade/zza.data/master/images/gardensalad.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/> 
 <img src="https://raw.github.com/IdeaBlade/zza.data/master/images/cola.jpg" alt="pizza" style="width: 200px;"/></p>
 Feel free to contribute better ones (the beverages are all the same at the moment).
 
