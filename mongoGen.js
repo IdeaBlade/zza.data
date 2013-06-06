@@ -118,13 +118,15 @@ function insertProductOptions() {
             optionTypes.forEach(function(typeName){
                 var options = app[typeName];
                 options.forEach(function(o){
+                    var productTypes = [];
+                    if (o.isPizzaOption)  {productTypes.push('pizza');}
+                    if (o.isSaladOption)  {productTypes.push('salad');}
                     mOptions.push({
                         _id: o.id,
                         type: o.type,
                         name: o.name,
                         factor: o.factor,
-                        isPizzaOption: o.isPizzaOption?true:false,
-                        isSaladOption: o.isSaladOption?true:false
+                        productTypes: productTypes
                     });
                 });
             });
