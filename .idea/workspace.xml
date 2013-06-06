@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cb95ab-a6a0-442a-8882-3cb94c561ca1" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\ZzaSampleDataGenerator.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\mongoSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ward\Documents\GitHub\zza.data\.idea\workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZzaSampleDataGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +29,7 @@
     <file path="/fragment.js" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370256986139" ignored="false" />
     <file path="/a.dummy" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370468614420" ignored="false" />
     <file path="/startMongo.bat" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370478312055" ignored="false" />
-    <file path="/Dummy.txt" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370480640236" ignored="false" />
+    <file path="/Dummy.txt" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370484877825" ignored="false" />
     <file path="/.gitignore" changelist="19cb95ab-a6a0-442a-8882-3cb94c561ca1" time="1370480754863" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +49,17 @@
     <favorites_list name="ZzaSampleDataGenerator" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="7" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.7517007">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -91,16 +91,16 @@
         <option value="$PROJECT_DIR$/startMongo.bat" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/output/ZzaDatabaseGen.sql" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="y" value="1072" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -132,31 +132,17 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ZzaSampleDataGenerator" />
+              <option name="myItemId" value="zza.data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ZzaSampleDataGenerator" />
+              <option name="myItemId" value="zza.data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zza.data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZzaSampleDataGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zza.data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -169,7 +155,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="C:/mongo/mongodb/bin/mongod.exe" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -270,14 +256,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="1072" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12975544" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25808498" sideWeight="0.47142857" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16473617" sideWeight="0.47142857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16435432" sideWeight="0.47142857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13519022" sideWeight="0.67" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -424,23 +410,19 @@
         <state line="9920" column="0" selection-start="948539" selection-end="948539" vertical-scroll-proportion="2.8556702" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.8142077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/productOptions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="56" selection-start="5662" selection-end="5662" vertical-scroll-proportion="1.0928962">
-          <folding />
-        </state>
+        <state line="162" column="56" selection-start="5662" selection-end="5662" vertical-scroll-proportion="1.0928962" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="71" selection-start="662" selection-end="662" vertical-scroll-proportion="0.2776204">
+        <state line="23" column="71" selection-start="662" selection-end="662" vertical-scroll-proportion="0.2776204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="7" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.7517007">
           <folding />
         </state>
       </provider>
