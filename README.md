@@ -54,16 +54,16 @@ We need the following "Entity Types" to make this work:
 - ProductSize 
 
 ### SQL v No-SQL ###
-Those entities map one-for-one to SQL tables and their are foreign keys to support the associations.
+Those entities map one-for-one to SQL tables and there are foreign keys to support the associations among related entities.
 
-It wouldn't be any fun if they also mapped one-for-one to Mongo collections. So they don't. Each `Order` is a document with a collection of `OrderItem`s which, in turn, each have a collection of `OrderItemOption`s. Naturally some of the data are denormalized; for example, you'll find the customer name repeated in each order. The `Order` document is optimized for the application's checkout screen and to tell the kitchen staff how to fill your order.
+It wouldn't be any fun if they also mapped one-for-one to Mongo collections. So they don't. Each `Order` is a document with a collection of `OrderItem`s, and each of them has a collection of `OrderItemOption`s. Naturally some of the data are denormalized. For example, you'll find the customer name repeated in each order. The `Order` document is optimized for the application's checkout screen and to tell the kitchen staff how to fill your order.
 
 ## Get the data ##
 Launch *index.html* in a browser and click one of the generator buttons to produce the JSON or T-SQL script for the Zza database. The output appears in a scrollable box on screen. Click the [Select all] button and copy the output; paste it wherever it's useful to you.
 
 For example, you could paste the JSON output into a new JavaScript file in your project and use that as the basis for mock data objects while you're developing your front-end.
 
-You could run the "T-SQL" generator, open SQL Server Management Studio (SMS), open a new query window, paste, and execute. It should produce a SQL Server database for you. You'll also find a recent generation of the T-SQL script in the *output* folder as "ZzaDatabaseGen.sql"; you can just play that SQL script in Visual Studio or in SQL SMS.
+You could run the "T-SQL" generator, open SQL Server Management Studio (SMS), create a new "Zza" database, open a new query window, paste, and execute. It should populate your new Zza database for you. You'll also find a recent generation of the T-SQL script in the *output* folder as "ZzaDatabaseGen.sql"; you can just play that SQL script in Visual Studio or in SQL SMS.
 
 The mongo generator is a little different. It requires node.js. Assuming you have node and MongoDb installed, you fire up your MongoDb server and then run "mongoGen.js" in node. That will (re)create a "Zza" database.
 
