@@ -1,6 +1,6 @@
 # Zza Data
 
-**Zza Data** is sample data for a fictive pizza takeout and delivery chain named "**Zza**."  Here is Zza himself!
+**Zza Data** is sample data for a fictive pizza takeout and delivery chain named **Zza**.  Here is Zza himself!
 
 ![Zza](https://raw.github.com/IdeaBlade/zza.data/master/images/logo.png)
 
