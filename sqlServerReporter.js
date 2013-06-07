@@ -235,7 +235,7 @@
             "[HasOptions] [bit] NOT NULL,",
             "[IsVegetarian] [bit] NULL,",
             "[WithTomatoSauce] [bit] NULL,",
-            "[Size] [nvarchar](10) NULL,",
+            "[SizeIds] [nvarchar](10) NULL,",
             "CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED" ,
             "([Id] ASC)WITH ",
             "(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ",
@@ -259,15 +259,16 @@
                 ",[HasOptions]"+
                 ",[IsVegetarian]"+
                 ",[WithTomatoSauce]"+
-                ",[Size]"+
+                ",[SizeIds]"+
                 ")VALUES(";
         var ins = new Inserter(insertPrefix);
         var productTypes=['pizzas','salads','beverages'];
         productTypes.forEach(function(typeName){
             var products = app[typeName];
             products.forEach(function(p){
+                var sizeIds = p.sizeIds ? "'" + p.sizeIds.join(",") + "'" : null
                 ins.add([p.id, p.type, p.name, p.description, p.image,
-                         p.hasOptions?1:0, p.isVegetarian?1:0, p.withTomatoSauce?1:0, p.size] );
+                         p.hasOptions?1:0, p.isVegetarian?1:0, p.withTomatoSauce?1:0, sizeIds] );
                 toOutput(ins.out());
             });
         }) ;

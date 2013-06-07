@@ -101,7 +101,7 @@ function insertProducts() {
                         hasOptions: p.hasOptions?true:false,
                         isVegetarian: p.isVegetarian?true:false,
                         withTomatoSauce: p.withTomatoSauce?true:false,
-                        size: p.size
+                        sizeIds: p.sizeIds
                     });
                 });
             });
@@ -209,6 +209,7 @@ function createCustomerOrders(){
                     id: j+1,
                     productId: item.product.id,
                     product: item.product.name,
+                    type: item.product.type,
                     sizeId: item.size.id,
                     size: item.size.name,
                     qty: item.qty,

@@ -305,11 +305,9 @@
             var salad = app.salads[saladIx++];
             if (saladIx === app.salads.length) { saladIx = 0; }
 
-            var size, sz = salad.size;
-            if (sz === "1,2"){
-                 sz = (next() & 1) ? 1 : 2; // 50/50 side or entree
-            }
-            size = app.saladSizes[(+sz)-1];
+            var szIds = salad.sizeIds;
+            var szId = szIds[next() % szIds.length]; // equally likely to pick any size
+            var size = app.productSizes[szId - 1]; // assume szId is origin 1
 
             // quantity of salads. 1 in 10 order 2 salads of the same type;
             var qty = 1 + (next() === 0);
@@ -376,11 +374,9 @@
             if (beverageIx === app.beverages.length) { beverageIx = 0; }
             exists(beverage, "beverage");
 
-            var size, sz = beverage.size;
-            if (sz === "1,2,3"){
-                sz = 1 + (next() % 3); // equally likely to pick any size
-            }
-            size = app.beverageSizes[(+sz) - 1];
+            var  szIds = beverage.sizeIds;
+            var szId = szIds[next() % szIds.length]; // equally likely to pick any size
+            var size = app.productSizes[szId - 1]; // assume szId is origin 1
             exists(size, "beverage size");
 
             // quantity of drinks. 1 in 10 order 2 drinks of the same type;

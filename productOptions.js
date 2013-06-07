@@ -177,6 +177,7 @@
     app.pizzaSizes = pizzaSizes;
     app.saladSizes = saladSizes;
     app.beverageSizes = beverageSizes;
+    app.productSizes = pizzaSizes.concat(saladSizes, beverageSizes);
 
     app.orderStatuses = orderStatuses;
 

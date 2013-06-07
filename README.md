@@ -42,9 +42,9 @@ We need the following "Entity Types" to make this work. Here are the entity type
 **Mutable Entities**
 
 - Customer (100)
-- Order (536)
-- OrderItem (1494 ordered pizzas, salads, and beverages)
-- OrderItemOption (1884 ordered crusts, toppings, and salad dressings)
+- Order (513)
+- OrderItem (1447 ordered pizzas, salads, and beverages)
+- OrderItemOption (1773 ordered crusts, toppings, and salad dressings)
 
 **Reference Entities**
 

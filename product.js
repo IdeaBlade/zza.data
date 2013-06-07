@@ -119,55 +119,55 @@
     var salads = [
         {name:"Caesar Salad",
          description:"Crisp Romaine, parmesan and croutons",
-         size: "1,2"}, // 3.95, 7.95
+         sizeIds: [7,8]}, // 3.95, 7.95
 
         {name:"Chicken Caesar Salad", // 8.95
          description:"Traditional Caesar with your choice of grilled or BBQ chicken",
-         size: "3"}, // 8.95
+         sizeIds: [9]}, // 8.95
 
         {name:"Spinach Salad", // 3.95, 7.95
          description:"Spinach, fresh mushrooms, caramelized onions, vine ripe tomatoes, artichoke hearts and candied walnuts.",
-         size: "1,2"},
+         sizeIds: [7,8]},
 
         {name:"Garden Salad", // 3.95, 7.95
          description:"Red leaf lettuce, black olives, fresh mushrooms, green peppers, red onions, artichoke hearts, vine ripe tomatoes and mozzarella",
-         size: "1,2"},
+         sizeIds: [7,8]},
 
         {name:"Greek Salad", // 3.95, 7.95
          description:"Red leaf lettuce, red onions, feta, olives and pepperoncinis",
-         size: "1,2"},
+         sizeIds: [7,8]},
 
         {name:"Chef Salad", // 8.95
          description:"Crisp Romaine, spiced ham, turkey, salami, gorgonzola, green onions, vine ripe tomatoes and roasted red peppers",
-         size: "3"},
+         sizeIds: [9]},
 
         {name:"Thai Chicken Salad", // 8.95
          description:"Crisp Romaine, green onions, Mandarin oranges, carrots, crispy noodles and chicken marinated in a spicy ginger peanut sauce",
-         size: "3"},
+         sizeIds: [9]},
 
         {name:"Farmer Salad", // 8.95
          description:"Crisp Romaine, smoked bacon, grilled chicken, vine ripe tomatoes and gorgonzola",
-         size: "3"},
+         sizeIds: [9]},
 
         {name:"Big Country Salad", // 8.95
          description:"Spinach, smoked bacon, feta, candied walnuts, caramelized onions and vine ripe tomatoes",
-         size: "3"}
+         sizeIds: [9]}
     ];
     salads.forEach(setProduct);
 
     type="beverage";
     var beverages = [
-        {name:"Cola", description:"Cola", size: "1,2,3"},// $1.50&up
-        {name:"Diet Cola", description:"Diet Cola", size: "1,2,3"}, // $1.50&up
-        {name:"Root Beer", description:"Root Beer", size: "1,2,3"}, // $1.50&up
-        {name:"Cascade Fog", description:"Cascade Fog", size: "1,2,3"}, // $1.50&up
-        {name:"Dr. Popper", description:"Dr. Popper", size: "1,2,3"}, // $1.50&up
-        {name:"Lemon Spruce", description:"Lemon Spruce", size: "1"}, // $1.50
-        {name:"Green Tea", description:"Green Tea", size: "4"},// $1.75
-        {name:"Orange Juice", description:"Orange Juice", size: "5"},// $1.75
-        {name:"Apple Juice", description:"Apple Juice", size: "5"},// $1.75
-        {name:"Energade", description:"Energade", size: "6"}, // $2.00
-        {name:"Aqua H2O", description:"Aqua H2O", size: "5"} // $1.75
+        {name:"Cola", description:"Cola", sizeIds: [10,11,12]},// $1.50&up
+        {name:"Diet Cola", description:"Diet Cola", sizeIds: [10,11,12]}, // $1.50&up
+        {name:"Root Beer", description:"Root Beer", sizeIds: [10,11,12]}, // $1.50&up
+        {name:"Cascade Fog", description:"Cascade Fog", sizeIds: [10,11,12]}, // $1.50&up
+        {name:"Dr. Popper", description:"Dr. Popper", sizeIds: [10,11,12]}, // $1.50&up
+        {name:"Lemon Spruce", description:"Lemon Spruce", sizeIds: [10]}, // $1.50
+        {name:"Green Tea", description:"Green Tea", sizeIds: [13]},// $1.75
+        {name:"Orange Juice", description:"Orange Juice", sizeIds: [14]},// $1.75
+        {name:"Apple Juice", description:"Apple Juice", sizeIds: [14]},// $1.75
+        {name:"Energade", description:"Energade", sizeIds: [15]}, // $2.00
+        {name:"Aqua H2O", description:"Aqua H2O", sizeIds: [14]} // $1.75
     ];
     beverages.forEach(setProduct);
 
