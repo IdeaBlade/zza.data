@@ -38,10 +38,10 @@ function insertData(){
     // insert reference collections first
     return Q.all([
         insertCustomers(),
+        insertOrderStatuses(),
         insertProducts(),
         insertProductOptions(),
         insertProductSizes()
-        // no point to an OrderStatuses collection in MongoDb
     ])
     .then(createCustomerOrders);
 }
@@ -82,6 +82,21 @@ function insertCustomers() {
                     return(collection);
                 });
         }
+}
+
+function insertOrderStatuses() {
+    return getCleanCollection('orderStatuses')
+        .then(function(collection){
+            var mStatuses = [];
+            app.orderStatuses.forEach(function(s){
+                mStatuses.push({
+                    _id: s.id,
+                    name: s.name
+                });
+            });
+            return insertCollection(collection, mStatuses);
+        })
+        .then(verifyCollection);
 }
 
 function insertProducts() {
