@@ -139,20 +139,16 @@ function insertProductSizes() {
     return getCleanCollection('productSizes')
         .then(function(collection){
             var mSizes = [];
-            var sizeTypes=['crusts','sauces','cheeses','veggies','meats','spices','saladDressings'];
-            sizeTypes.forEach(function(typeName){
-                var sizes = app[typeName];
-                sizes.forEach(function(s){
-                    mSizes.push({
-                        id: s.id,
-                        type: s.type,
-                        name: s.name,
-                        price: s.price,
-                        premiumPrice: s.premiumPrice,
-                        toppingPrice: s.toppingPrice,
-                        isGlutenFree: s.isGlutenFree?true:false
-                    });
-                });
+            app.productSizes.forEach(function(s){
+            mSizes.push({
+                _id: s.id,
+                type: s.type,
+                name: s.name,
+                price: s.price,
+                premiumPrice: s.premiumPrice,
+                toppingPrice: s.toppingPrice,
+                isGlutenFree: s.isGlutenFree?true:false
+            });
             });
             return insertCollection(collection, mSizes);
         })
@@ -163,15 +159,15 @@ function createCustomerOrders(){
     var zzaGenerator = new app.ZzaGenerator();
     var deferred = Q.defer();
     var insertCounter = 0;
-    var incInsertCounter = function () {insertCounter +=1;}
+    var incInsertCounter = function () {insertCounter +=1;};
     var decInsertCounter = function (){
         insertCounter -= 1;
         if (insertCounter < 0){deferred.reject(new Error('insertCounter became negative'))}
         if (insertCounter === 0){
-            console.log('Saved last order')
+            console.log('Saved last order');
             deferred.resolve(true);
         }
-    }
+    };
     console.log ('Creating and saving customer orders');
     var ordersCollection;
     getCleanCollection('orders')
@@ -215,7 +211,7 @@ function createCustomerOrders(){
                     qty: item.qty,
                     unitPrice: item.unitPrice,
                     totalPrice: item.totalPrice
-                }
+                };
                 if (item.instructions) {
                     mItem.instructions = item.instructions;
                 }
@@ -239,9 +235,10 @@ function createCustomerOrders(){
             ordersCollection.insert(mOrder, {safe: true}, function(err, recs){
                 if (err){
                     var msg =  "Error on mOrder insert of id "+mOrder._id;
-                    console.log(msg);
+                    var fullMsg = msg + "\n:"+err.message;
+                    console.log(fullMsg);
                     console.dir(mOrder);
-                    var err = new Error(msg + "; see console")
+                    err = new Error(msg + "; see console");
                     deferred.reject(err);
                     throw err; // hope to terminate further processing
                 } else {
