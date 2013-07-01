@@ -2,6 +2,9 @@
 console.log("Hello, mongoGen");
 
 var app = require('app') ;
+var mongo = require('mongodb');
+var ObjectID = require('mongodb').ObjectID;
+
 console.log(app.version);
 
 require('./utilityFns');
@@ -17,7 +20,6 @@ app.toOutput = app.statsOut = function(line) {
 
 var Q = require('q');
 var nsend = Q.nsend;
-var mongo = require('mongodb');
 var db;
 
 function run(){
@@ -171,6 +173,7 @@ function insertProductSizes() {
 }
 
 function createCustomerOrders(){
+    app.idGenerators.newOrderId = ObjectID; // use Mongo Id generator
     var zzaGenerator = new app.ZzaGenerator();
     var deferred = Q.defer();
     var insertCounter = 0;
@@ -217,7 +220,7 @@ function createCustomerOrders(){
             for (var j = 0; j < itemsLen; j++){
                 var item = items[j];
                 var mItem = {
-                    id: j+1,
+                    seqNum: j+1,
                     productId: item.product.id,
                     product: item.product.name,
                     type: item.product.type,
