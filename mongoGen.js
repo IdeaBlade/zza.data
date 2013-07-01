@@ -49,7 +49,7 @@ function insertData(){
 }
 
 function insertCustomers() {
-    return getCleanCollection('customers')
+    return getCleanCollection('Customer')
         .then(function(collection){
             var mCustomers = [];
             var customers = app.customers;
@@ -79,7 +79,7 @@ function insertCustomers() {
                         throw new Error("Expected some 'Customers'; didn't get them");
                     }
                     console.log("Got "+items.length+" 'Customers'");
-                    app.reporter.stats['customers'] = items.length;
+                    app.reporter.stats[collection.collectionName] = items.length;
                     app.customers = items; // overwrite app-level customers!
                     return(collection);
                 });
@@ -87,7 +87,7 @@ function insertCustomers() {
 }
 
 function insertOrderStatuses() {
-    return getCleanCollection('orderStatuses')
+    return getCleanCollection('OrderStatus')
         .then(function(collection){
             var mStatuses = [];
             app.orderStatuses.forEach(function(s){
@@ -102,7 +102,7 @@ function insertOrderStatuses() {
 }
 
 function insertProducts() {
-    return getCleanCollection('products')
+    return getCleanCollection('Product')
         .then(function(collection){
             var mProducts = [];
             var productTypes=['pizzas','salads','beverages'];
@@ -128,7 +128,7 @@ function insertProducts() {
 }
 
 function insertProductOptions() {
-    return getCleanCollection('productOptions')
+    return getCleanCollection('ProductOption')
         .then(function(collection){
             var mOptions = [];
             var optionTypes=['crusts','sauces','cheeses','veggies','meats','spices','saladDressings'];
@@ -153,7 +153,7 @@ function insertProductOptions() {
 }
 
 function insertProductSizes() {
-    return getCleanCollection('productSizes')
+    return getCleanCollection('ProductSize')
         .then(function(collection){
             var mSizes = [];
             app.productSizes.forEach(function(s){
@@ -188,7 +188,7 @@ function createCustomerOrders(){
     };
     console.log ('Creating and saving customer orders');
     var ordersCollection;
-    getCleanCollection('orders')
+    getCleanCollection('Order')
         .then(function(collection){
             ordersCollection = collection;
             app.reporter.report = report; // replace w/ mongo report fn
