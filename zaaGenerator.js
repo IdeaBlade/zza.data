@@ -52,7 +52,7 @@
         }
 
         /* List indexes */
-        var premiumPizzaIx = 2; // index of first premium pizza
+        var premiumPizzaIx = 2;
         var pizzaIx = premiumPizzaIx;
         var sauceIx = 0;
         var cheeseIx = 0;
@@ -187,15 +187,12 @@
         /***  Make Pizza ***/
         function makePizza(){
             var pizza;
-            var isPremium;
-
             var x = next();
             if (x === 0)      // 10% Plain
                 { pizza = app.pizzas[0]; }
             else if ( x < 3)  // 20% Make Your Own
                 { pizza = app.pizzas[1]; }
-            else {            // 70% Premium
-                isPremium = true;
+            else {            // 70% other
                 pizza = app.pizzas[pizzaIx++];
                 if (pizzaIx === app.pizzas.length) {pizzaIx = premiumPizzaIx; }
             }
@@ -206,7 +203,7 @@
             var size = pickPizzaSize();
             exists(size, "pizza size");
 
-            var unitPrice = isPremium ? size.premiumPrice : size.price;
+            var unitPrice = pizza.isPremium ? size.premiumPrice : size.price;
             var totalPrice = unitPrice;
             var toppings = makePizzaToppings(pizza, size);
             addOptionIds(toppings);

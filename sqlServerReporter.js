@@ -233,6 +233,7 @@
             "[Description] [nvarchar](255) NOT NULL,",
             "[Image] [nvarchar](50) NULL,",
             "[HasOptions] [bit] NOT NULL,",
+            "[IsPremium] [bit] NOT NULL,",
             "[IsVegetarian] [bit] NULL,",
             "[WithTomatoSauce] [bit] NULL,",
             "[SizeIds] [nvarchar](10) NULL,",
@@ -257,6 +258,7 @@
                 ",[Description]"+
                 ",[Image]"+
                 ",[HasOptions]"+
+                ",[IsPremium]"+
                 ",[IsVegetarian]"+
                 ",[WithTomatoSauce]"+
                 ",[SizeIds]"+
@@ -268,7 +270,7 @@
             products.forEach(function(p){
                 var sizeIds = p.sizeIds ? "'" + p.sizeIds.join(",") + "'" : null
                 ins.add([p.id, p.type, p.name, p.description, p.image,
-                         p.hasOptions?1:0, p.isVegetarian?1:0, p.withTomatoSauce?1:0, sizeIds] );
+                         p.hasOptions?1:0,  p.isPremium?1:0, p.isVegetarian?1:0, p.withTomatoSauce?1:0, sizeIds] );
                 toOutput(ins.out());
             });
         }) ;

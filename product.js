@@ -24,6 +24,7 @@
         product.image = product.name.toLowerCase().replace(/\s/g, '')+'.jpg';
 
         if (type == 'pizza')  {
+            product.isPremium =  product.isPremium === undefined ? true : product.isPremium;
             product.withTomatoSauce =  product.withTomatoSauce === undefined ? true : product.withTomatoSauce;
         }
         if (type == 'beverage')  {
@@ -38,12 +39,14 @@
         // This one is special: not allowed to add toppings.
         {name:"Plain Cheese",
             description:"Your basic plain cheese pizza with no toppings.\nIncludes tomato sauce, mozzarella, oregano and a sprinkling of cheddar",
+            isPremium: false,
             isVegetarian: true,
             hasOptions: false},
 
         // This gets a different UI.
         {name:"Make Your Own",
             description:"Make your own\nIncludes tomato sauce, mozzarella, oregano and a sprinkling of cheddar",
+            isPremium: false,
             isVegetarian: true},
 
         // All premium pizzas from here on

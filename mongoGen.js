@@ -116,6 +116,7 @@ function insertProducts() {
                         description: p.description,
                         image: p.image,
                         hasOptions: p.hasOptions?true:false,
+                        isPremium: p.isPremium?true:false,
                         isVegetarian: p.isVegetarian?true:false,
                         withTomatoSauce: p.withTomatoSauce?true:false,
                         sizeIds: p.sizeIds
