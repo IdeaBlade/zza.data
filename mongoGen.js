@@ -221,9 +221,8 @@ function createCustomerOrders(){
             for (var j = 0; j < itemsLen; j++){
                 var item = items[j];
                 var mItem = {
-                    seqNum: j+1,
                     productId: item.product.id,
-                    product: item.product.name,
+                    name: item.product.name,
                     type: item.product.type,
                     sizeId: item.size.id,
                     size: item.size.name,
