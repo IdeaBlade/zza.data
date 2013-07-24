@@ -59,10 +59,12 @@ function insertCustomers() {
                     lastName: c.lastName,
                     phone: c.phone,
                     email: c.email,
-                    street: c.street,
-                    city: c.city,
-                    state: c.state,
-                    zip: c.zip
+                    address: {
+                        street: c.street,
+                        city: c.city,
+                        state: c.state,
+                        zip: c.zip
+                    }
                 });
             });
             return insertCollection(collection, mCustomers);
@@ -205,7 +207,8 @@ function createCustomerOrders(){
             var mOrder = {
                 _id: order.id,
                 customerId: customer._id,
-                customer: customer.firstName+' '+customer.lastName,
+                name: customer.firstName+' '+customer.lastName,
+                statusId: order.status.id,
                 status: order.status.name,
                 ordered: order.orderDate,
                 phone: order.phone,
@@ -214,7 +217,7 @@ function createCustomerOrders(){
                 itemsTotal: order.itemsTotal
             };
             if (order.deliveryCharge){
-                mOrder.deliveryAddress = order.deliveryAddress;
+                mOrder.deliveryAddress = customer.address;
             }
             var mItems = [];
             var items = order.items, itemsLen = items.length;
