@@ -107,7 +107,7 @@ function insertProducts() {
     return getCleanCollection('Product')
         .then(function(collection){
             var mProducts = [];
-            var productTypes=['pizzas','salads','beverages'];
+            var productTypes=['pizzas','salads','drinks'];
             productTypes.forEach(function(typeName){
                 var products = app[typeName];
                 products.forEach(function(p){

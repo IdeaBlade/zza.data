@@ -148,13 +148,13 @@
         {id: 9, type:"salad", name: "Entree", price: 8.95, toppingPrice: 1.30}
     ];
 
-    var beverageSizes = [
-        {id: 10, type:"beverage", name: "Can", price: 1.50},
-        {id: 11, type:"beverage", name: "20 oz", price: 1.95},
-        {id: 12, type:"beverage", name: "2 liter", price: 2.75},
-        {id: 13, type:"beverage", name: "20 oz", price: 1.75},
-        {id: 14, type:"beverage", name: "Serving", price: 1.75},
-        {id: 15, type:"beverage", name: "Serving", price: 2.00}
+    var drinkSizes = [
+        {id: 10, type:"drink", name: "Can", price: 1.50},
+        {id: 11, type:"drink", name: "20 oz", price: 1.95},
+        {id: 12, type:"drink", name: "2 liter", price: 2.75},
+        {id: 13, type:"drink", name: "20 oz", price: 1.75},
+        {id: 14, type:"drink", name: "Serving", price: 1.75},
+        {id: 15, type:"drink", name: "Serving", price: 2.00}
     ];
 
     var orderStatuses = [
@@ -176,8 +176,8 @@
 
     app.pizzaSizes = pizzaSizes;
     app.saladSizes = saladSizes;
-    app.beverageSizes = beverageSizes;
-    app.productSizes = pizzaSizes.concat(saladSizes, beverageSizes);
+    app.drinkSizes = drinkSizes;
+    app.productSizes = pizzaSizes.concat(saladSizes, drinkSizes);
 
     app.orderStatuses = orderStatuses;
 

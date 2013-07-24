@@ -27,7 +27,7 @@
             product.isPremium =  product.isPremium === undefined ? true : product.isPremium;
             product.withTomatoSauce =  product.withTomatoSauce === undefined ? true : product.withTomatoSauce;
         }
-        if (type == 'beverage')  {
+        if (type == 'drink')  {
             product.hasOptions = false;
         } else {
             product.hasOptions =  product.hasOptions === undefined ? true : product.hasOptions;            
@@ -158,8 +158,8 @@
     ];
     salads.forEach(setProduct);
 
-    type="beverage";
-    var beverages = [
+    type="drink";
+    var drinks = [
         {name:"Cola", description:"Cola", sizeIds: [10,11,12]},// $1.50&up
         {name:"Diet Cola", description:"Diet Cola", sizeIds: [10,11,12]}, // $1.50&up
         {name:"Root Beer", description:"Root Beer", sizeIds: [10,11,12]}, // $1.50&up
@@ -172,11 +172,11 @@
         {name:"Energade", description:"Energade", sizeIds: [15]}, // $2.00
         {name:"Aqua H2O", description:"Aqua H2O", sizeIds: [14]} // $1.75
     ];
-    beverages.forEach(setProduct);
+    drinks.forEach(setProduct);
 
     app.pizzas = pizzas;
     app.salads = salads;
-    app.beverages = beverages;
+    app.drinks = drinks;
 
 
 }));

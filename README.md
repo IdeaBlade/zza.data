@@ -22,9 +22,9 @@ The Zza project is just underway and of course the documentation lags behind the
 ## The Zza Story ##
 Zza takes orders over the phone for pick-up and delivery; perhaps in your app, the `Customer` can order online. The customer self-identifies by name (“Skippy”) and phone number. If the customer wants the order delivered, s/he supplies a delivery address.
 
-The customer places an `Order` for pizzas, salads, and beverages. The app remembers the customers and their orders.
+The customer places an `Order` for pizzas, salads, and drinks. The app remembers the customers and their orders.
 
-The customer picks from a `Product` catalog of pizzas, salads, and beverages. S/he can customize pizzas and salads (`Products`) with toppings (`ProductOptions`). The resulting order is a three level structure: `Order` -> `OrderItem` -> `OrderItemOption`.
+The customer picks from a `Product` catalog of pizzas, salads, and drinks. S/he can customize pizzas and salads (`Products`) with toppings (`ProductOptions`). The resulting order is a three level structure: `Order` -> `OrderItem` -> `OrderItemOption`.
 
 Pricing is a bit tricky ... deliberately. The pizzas and salads come in different sizes, each size with its own price for the base pizza/salad and a price per extra topping. Some of the toppings are free (spices). Some of the toppings cost double the topping-price-per-product-size (Pesto, BBQ Chicken). The parameters of the calculation are captured in properties of the `ProductSize`, `Product` and `ProductOption` entities.
 
@@ -43,13 +43,13 @@ We need the following "Entity Types" to make this work. Here are the entity type
 
 - Customer (100)
 - Order (513)
-- OrderItem (1447 ordered pizzas, salads, and beverages)
+- OrderItem (1447 ordered pizzas, salads, and drinks)
 - OrderItemOption (1773 ordered crusts, toppings, and salad dressings)
 
 **Reference Entities**
 
 - OrderStatus (5: Ordered, PickedUp, Delivered, Canceled, Pending)
-- Product (41 pizzas, salads, and beverages)
+- Product (41 pizzas, salads, and drinks)
 - ProductOption (64 crusts, toppings, and salad dressings)
 - ProductSize (15)
 
@@ -70,9 +70,9 @@ The mongo generator is a little different. It requires node.js. Assuming you hav
 Or you could extract "ZzaMongDb.zip" (located in the *output* folder) into your MongoDb data folder.
 
 ## Images ##
-You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and beverages in the *images* folder.
+You want pictures in your app, right? We've got `Product` pictures of pizzas, salads and drinks in the *images* folder.
 <p><img src="https://raw.github.com/IdeaBlade/zza.data/master/images/italianstallion.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/> &nbsp;
 <img src="https://raw.github.com/IdeaBlade/zza.data/master/images/gardensalad.jpg" alt="pizza" style="width: 200px;margin-right: 4px;"/> &nbsp;
 <img src="https://raw.github.com/IdeaBlade/zza.data/master/images/cola.jpg" alt="pizza" style="width: 200px;"/></p>
-Feel free to contribute better ones (the beverages are all the same at the moment).
+Feel free to contribute better ones (the drinks are all the same at the moment).
 

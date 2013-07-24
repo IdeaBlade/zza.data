@@ -24,7 +24,7 @@
         this.makeOrder = makeOrder;
         this.makePizza = makePizza;
         this.makeSalad = makeSalad;
-        this.makeBeverage = makeBeverage;
+        this.makeDrink = makeDrink;
         this.makePizzaToppings = makePizzaToppings;
         this.makeSaladToppings = makeSaladToppings;
 
@@ -60,7 +60,7 @@
         var meatIx = 0;
         var saladIx = 0;
         var saladDressingIx = 0;
-        var beverageIx = 0;
+        var drinkIx = 0;
         var spiceIx = 0;
 
         /* Miscellaneous */
@@ -125,18 +125,18 @@
                 add(makePizza());
                 add(makePizza());
                 add(makePizza());
-                add(makeBeverage());
-                add(makeBeverage());
-                add(makeBeverage());
+                add(makeDrink());
+                add(makeDrink());
+                add(makeDrink());
             } else if (x < 5) {    // 30%
                 add(makePizza());
                 add(makeSalad());
-                add(makeBeverage());
+                add(makeDrink());
             } else if ( x < 7) {   // 20%
                 add(makePizza());
                 add(makePizza());
-                add(makeBeverage());
-                add(makeBeverage());
+                add(makeDrink());
+                add(makeDrink());
             } else {               // 30%
                 add(makePizza());
             }
@@ -364,17 +364,17 @@
             return toppings;
         }
 
-        /***  Make Beverage ***/
-        function makeBeverage(){
+        /***  Make drink ***/
+        function makeDrink(){
 
-            var beverage = app.beverages[beverageIx++];
-            if (beverageIx === app.beverages.length) { beverageIx = 0; }
-            exists(beverage, "beverage");
+            var drink = app.drinks[drinkIx++];
+            if (drinkIx === app.drinks.length) { drinkIx = 0; }
+            exists(drink, "drink");
 
-            var  szIds = beverage.sizeIds;
+            var  szIds = drink.sizeIds;
             var szId = szIds[next() % szIds.length]; // equally likely to pick any size
             var size = app.productSizes[szId - 1]; // assume szId is origin 1
-            exists(size, "beverage size");
+            exists(size, "drink size");
 
             // quantity of drinks. 1 in 10 order 2 drinks of the same type;
             var qty = 1 + (next() === 0);
@@ -383,7 +383,7 @@
 
             return {
                 id: newItemId(),
-                product: beverage,
+                product: drink,
                 size: size,
                 qty: qty,
                 unitPrice: unitPrice,

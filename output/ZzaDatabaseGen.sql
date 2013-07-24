@@ -231,17 +231,17 @@ INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions
 INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(28,'salad','Thai Chicken Salad','Crisp Romaine, green onions, Mandarin oranges, carrots, crispy noodles and chicken marinated in a spicy ginger peanut sauce','thaichickensalad.jpg',1,0,0,'''9''');
 INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(29,'salad','Farmer Salad','Crisp Romaine, smoked bacon, grilled chicken, vine ripe tomatoes and gorgonzola','farmersalad.jpg',1,0,0,'''9''');
 INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(30,'salad','Big Country Salad','Spinach, smoked bacon, feta, candied walnuts, caramelized onions and vine ripe tomatoes','bigcountrysalad.jpg',1,0,0,'''9''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(31,'beverage','Cola','Cola','cola.jpg',0,0,0,'''10,11,12''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(32,'beverage','Diet Cola','Diet Cola','dietcola.jpg',0,0,0,'''10,11,12''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(33,'beverage','Root Beer','Root Beer','rootbeer.jpg',0,0,0,'''10,11,12''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(34,'beverage','Cascade Fog','Cascade Fog','cascadefog.jpg',0,0,0,'''10,11,12''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(35,'beverage','Dr. Popper','Dr. Popper','dr.popper.jpg',0,0,0,'''10,11,12''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(36,'beverage','Lemon Spruce','Lemon Spruce','lemonspruce.jpg',0,0,0,'''10''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(37,'beverage','Green Tea','Green Tea','greentea.jpg',0,0,0,'''13''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(38,'beverage','Orange Juice','Orange Juice','orangejuice.jpg',0,0,0,'''14''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(39,'beverage','Apple Juice','Apple Juice','applejuice.jpg',0,0,0,'''14''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(40,'beverage','Energade','Energade','energade.jpg',0,0,0,'''15''');
-INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(41,'beverage','Aqua H2O','Aqua H2O','aquah2o.jpg',0,0,0,'''14''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(31,'drink','Cola','Cola','cola.jpg',0,0,0,'''10,11,12''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(32,'drink','Diet Cola','Diet Cola','dietcola.jpg',0,0,0,'''10,11,12''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(33,'drink','Root Beer','Root Beer','rootbeer.jpg',0,0,0,'''10,11,12''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(34,'drink','Cascade Fog','Cascade Fog','cascadefog.jpg',0,0,0,'''10,11,12''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(35,'drink','Dr. Popper','Dr. Popper','dr.popper.jpg',0,0,0,'''10,11,12''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(36,'drink','Lemon Spruce','Lemon Spruce','lemonspruce.jpg',0,0,0,'''10''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(37,'drink','Green Tea','Green Tea','greentea.jpg',0,0,0,'''13''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(38,'drink','Orange Juice','Orange Juice','orangejuice.jpg',0,0,0,'''14''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(39,'drink','Apple Juice','Apple Juice','applejuice.jpg',0,0,0,'''14''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(40,'drink','Energade','Energade','energade.jpg',0,0,0,'''15''');
+INSERT INTO [dbo].[Product]([Id],[Type],[Name],[Description],[Image],[HasOptions],[IsVegetarian],[WithTomatoSauce],[SizeIds])VALUES(41,'drink','Aqua H2O','Aqua H2O','aquah2o.jpg',0,0,0,'''14''');
 PRINT '
 *** ProductOption Table Generation ***'
 
@@ -385,12 +385,12 @@ INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[Topp
 INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(7,'salad','Side',3.95,NULL,0.65,0);
 INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(8,'salad','Entree',7.95,NULL,1.3,0);
 INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(9,'salad','Entree',8.95,NULL,1.3,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(10,'beverage','Can',1.5,NULL,NULL,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(11,'beverage','20 oz',1.95,NULL,NULL,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(12,'beverage','2 liter',2.75,NULL,NULL,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(13,'beverage','20 oz',1.75,NULL,NULL,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(14,'beverage','Serving',1.75,NULL,NULL,0);
-INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(15,'beverage','Serving',2,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(10,'drink','Can',1.5,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(11,'drink','20 oz',1.95,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(12,'drink','2 liter',2.75,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(13,'drink','20 oz',1.75,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(14,'drink','Serving',1.75,NULL,NULL,0);
+INSERT INTO [dbo].[ProductSize]([Id],[Type],[Name],[Price] ,[PremiumPrice],[ToppingPrice],[IsGlutenFree])VALUES(15,'drink','Serving',2,NULL,NULL,0);
 PRINT '
 *** OrderStatus Table Generation ***'
 

@@ -264,7 +264,7 @@
                 ",[SizeIds]"+
                 ")VALUES(";
         var ins = new Inserter(insertPrefix);
-        var productTypes=['pizzas','salads','beverages'];
+        var productTypes=['pizzas','salads','drinks'];
         productTypes.forEach(function(typeName){
             var products = app[typeName];
             products.forEach(function(p){
@@ -384,7 +384,7 @@
                 ",[IsGlutenFree]"+
                 ")VALUES(";
         var ins = new Inserter(insertPrefix);
-        var sizeTypes=['pizzaSizes','saladSizes','beverageSizes'];
+        var sizeTypes=['pizzaSizes','saladSizes','drinkSizes'];
         sizeTypes.forEach(function(typeName){
             var sizes = app[typeName];
             sizes.forEach(function(s){
