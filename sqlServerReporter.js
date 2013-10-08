@@ -481,7 +481,7 @@
             "[OrderStatusId] [int] NOT NULL,",
             "[OrderDate] [datetime2](7) NOT NULL,",
             "[Phone] [nvarchar](100) NULL,",
-            "[DeliveryDate] [datetime2](7) NOT NULL,",
+            "[DeliveryDate] [datetime2](7) NULL,",
             "[DeliveryCharge] [smallmoney] NOT NULL,",
             "[DeliveryStreet] [nvarchar](100) NULL,",
             "[DeliveryCity] [nvarchar](100) NULL,",
